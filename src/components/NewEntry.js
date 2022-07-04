@@ -13,7 +13,7 @@ function NewEntry () {
     function sendInputData (e) {
         e.preventDefault();
 
-        const URL = "http://localhost:5000/new-entryorexit";
+        const URL = "https://j040v1t0rprojeto13mywalletback.herokuapp.com/new-entryorexit";
         const requisicao = axios.post(URL, dataEntry);
         requisicao.then((response) => {
             navigate("/wallet");

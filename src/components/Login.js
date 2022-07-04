@@ -13,7 +13,7 @@ function Login () {
     function sendLogin (e) {
         e.preventDefault();
 
-        const URL = "http://localhost:5000/login"
+        const URL = "https://j040v1t0rprojeto13mywalletback.herokuapp.com/login"
         const promise = axios.post(URL, dataLogin);
         promise.then(response => {
             console.log("response:", response);

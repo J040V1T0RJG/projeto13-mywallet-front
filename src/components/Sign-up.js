@@ -18,7 +18,7 @@ function SignUp () {
         e.preventDefault();
         console.log("entrou na função sendsingup")
 
-        const URL = "http://localhost:5000/sign-up";
+        const URL = "https://j040v1t0rprojeto13mywalletback.herokuapp.com/sign-up";
         const promise = axios.post(URL, dataSignUp)
         promise.then(response => {
             alert(`${response.data}`)

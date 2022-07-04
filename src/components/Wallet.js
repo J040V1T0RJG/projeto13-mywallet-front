@@ -21,7 +21,7 @@ function Wallet () {
     };
     
     useEffect(() => {
-        const URL = "http://localhost:5000/wallet";
+        const URL = "https://j040v1t0rprojeto13mywalletback.herokuapp.com/wallet";
         const promise = axios.get(URL,config);
 
         promise.then( response => {
